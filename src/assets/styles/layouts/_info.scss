@@ -1,0 +1,66 @@
+/* urls */
+$url-bckgrnd: url("../images/info.jpg");
+
+/**
+ * Estilos aplicados a etiquetas
+ */
+ol {
+  counter-reset: my-counter;
+
+  > li {
+    position: relative;
+    padding-bottom: 15px;
+    margin: 0 0 0.5rem 0;
+    counter-increment: my-counter;
+
+    &::before {
+      position: absolute;
+      top: -4px;
+      left: calc(-1 * var(--size) - 10px);
+      width: var(--size);
+      height: var(--size);
+      border: 1px solid gray;
+      border-radius: 50%;
+      // color: #00539f;
+      @apply text-secondary;
+      content: counter(my-counter);
+      font-size: 1.5rem;
+      font-weight: bold;
+      line-height: var(--size);
+      text-align: center;
+  
+      --size: calc(25px + 0.5vw);
+    }
+  }
+}
+
+/**
+ * Estilos aplicados a clases
+ */
+.content-top {
+  height: 568px;
+  background-image: $url-bckgrnd;
+}
+
+.content-top-text {
+  > h2 {
+    bottom: 40%;
+  }
+
+  > p {
+    top: 68%;
+  }
+}
+
+/**
+* Estilos tailwind
+*/
+@layer components {
+  .active { @apply text-white; }
+
+  .badge {
+    font-size: xx-small;
+
+    @apply text-white md:text-sm font-bold bg-secondary rounded py-0.5 px-1 leading-none;
+  }
+}

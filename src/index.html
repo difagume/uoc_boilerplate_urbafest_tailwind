@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico" sizes="32x32">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+  <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <title>UrbaFest</title>
+</head>
+
+<body class="font-montserrat">
+  <div class="grid grid-cols-1 md:grid-cols-6">
+    <div class="md:col-span-6 grid bg-black">
+      <div class="h-12 place-self-center flex items-center">
+        <a href="index.html">
+          <img src="assets/images/logo.jpg" class="img-rounded-10" alt="" />
+        </a>
+      </div>
+      <div class="md:col-start-4 md:col-span-3 flex justify-evenly items-center font-bold">
+        <a class="a-decoration hover:opacity-75" href="#">bandas</a>
+        <a class="a-decoration hover:opacity-75" href="info.html">información</a>
+        <a class="a-decoration hover:opacity-75" href="#">popurrí</a>
+      </div>
+    </div>
+
+    <div
+      class="poster md:col-span-6 bg-white text-white bg-no-repeat bg-top bg-cover grid cols-1 md:grid-cols-3 md:grid-rows-6 p-0">
+      <div class="self-center md:ml-10">
+        <h1 class="font-rockSalt text-xl md:text-4xl">13/01/2021</h1>
+      </div>
+      <div class="col-span-3 row-span-2 row-start-3 place-self-center">
+        <h1 class="font-rockSalt font-'ro' text-5xl md:text-8xl">UrbaFest</h1>
+      </div>
+      <div class="col-start-1 md:col-start-2 row-start-6 justify-self-end">
+        <img class="w-32" src="assets/images/entrada-gratis.png" alt="entrada-gratis-logo">
+      </div>
+      <div class="col-start-3 row-start-6 text-justify mr-4 md:mx-8 text-xs md:text-base">
+        <p>Festival de música independiente de Ecuador con algunas de las bandas emblemáticas del género rock,
+          hip hop, ska, heavy metal, punk, hard core, reggae.</p>
+      </div>
+      <span class="text-gray-400 xx-small absolute right-2 bottom-2">Photo on <a
+          class="no-underline text-primary-500 uppercase font-bold"
+          href="https://unsplash.com/s/photos/rock-music?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>
+      </span>
+    </div>
+
+    <div class="md:col-span-6 m-8 md:mt-16 md:mb-0 text-center">
+      <h2 class="text-4xl md:text-5xl font-bold">
+        Siguiente Presentación
+        <i class="fa fa-bullhorn"></i>
+      </h2>
+      <p class="text-xs md:text-base mt-2">UrbaFest, Parque de La Jose 13 Ene, 2021</p>
+      <div
+        class="countdown-timer font-bold md:grid md:grid-cols-4 grid-rows-2 justify-center mx-auto max-w-screen-sm gap-x-12">
+        <p id="dias" class="countdown-number">55</p>
+        <p class="text-xs uppercase col-start-1 row-start-2">dias</p>
+        <p id="horas" class="countdown-number">21</p>
+        <p class="text-xs uppercase col-start-2 row-start-2">horas</p>
+        <p id="minutos" class="countdown-number">45</p>
+        <p class="text-xs uppercase col-start-3 row-start-2">minutos</p>
+        <p id="segundos" class="countdown-number">13</p>
+        <p class="text-xs uppercase">segundos</p>
+      </div>
+      <h2 class="text-4xl mt-14 md:mt-0 font-bold">Próximo Concierto</h2>
+      <p class="text-xs md:text-base">Aquí puedes obtener información sobre las fechas de la gira y comprar entradas
+        para todas las próximas presentaciones</p>
+
+      <div class="bg-grey-light pb-8 w-full flex flex-wrap justify-center items-center">
+        <!-- component card -->
+        <div class="card">
+          <div class="card-title">
+            <p>Cayambe</p>
+          </div>
+          <div class="card-body">
+            <p class="card-body-p text-gray-500">02.18.2021</p>
+          </div>
+          <div class="card-footer">
+            <p class="text-right cursor-pointer"><small class="text-primary-500 uppercase">Más info</small></p>
+          </div>
+        </div>
+
+        <div class="card bg-secondary text-white">
+          <div class="card-title">
+            <p>Cuenca</p>
+          </div>
+          <div class="card-body">
+            <p class="card-body-p">03.20.2021</p>
+          </div>
+          <div class="card-footer">
+            <p class="text-right cursor-pointer"><small class="uppercase">Más info</small></p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title">
+            <p>Loja</p>
+          </div>
+          <div class="card-body">
+            <p class="card-body-p text-gray-500">04.03.2021</p>
+          </div>
+          <div class="card-footer">
+            <p class="text-right cursor-pointer"><small class="text-primary-500 uppercase">Más info</small></p>
+          </div>
+        </div>
+
+        <div class="card bg-secondary text-white">
+          <div class="card-title">
+            <p>Ibarra</p>
+          </div>
+          <div class="card-body">
+            <p class="card-body-p">05.24.2021</p>
+          </div>
+          <div class="card-footer">
+            <p class="text-right cursor-pointer"><small class="uppercase">Más info</small></p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title">
+            <p>Quito</p>
+          </div>
+          <div class="card-body">
+            <p class="card-body-p text-gray-500">06.13.2021</p>
+          </div>
+          <div class="card-footer">
+            <p class="text-right cursor-pointer"><small class="text-primary-500 uppercase">Más info</small></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="hidden md:grid bg-black place-items-center">
+      <a href="#">
+        <img src="assets/images/logo.jpg" class="img-rounded-10" alt="" />
+      </a>
+    </div>
+
+    <div class="hidden md:grid md:grid-cols-3 md:col-span-4 place-items-center bg-black a-decoration font-bold">
+      <a class="text-decoration-none hover:opacity-75" href="#">bandas</a>
+      <a class="text-decoration-none hover:opacity-75" href="info.html">información</a>
+      <a class="text-decoration-none hover:opacity-75" href="#">popurri</a>
+    </div>
+
+    <div class="social-buttons text-primary-500 bg-black h-10 grid place-items-center gap-x-4">
+      <a class="decoration-none hover:opacity-75" href="#">
+        <i class="fab fa-google-plus-g hover-opacity"></i>
+      </a>
+      <a class="decoration-none hover:opacity-75" href="#">
+        <i class="fab fa-facebook-f hover-opacity"></i>
+      </a>
+      <a class="decoration-none hover:opacity-75" href="#">
+        <i class="fab fa-twitter hover-opacity"></i>
+      </a>
+    </div>
+  </div>
+  <footer class="bg-black text-center">
+    <span class="xx-small text-gray-500">Página creada con fines educativos, la información presentada no es
+      real.</span>
+  </footer>
+  <script src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+</body>
+
+</html>

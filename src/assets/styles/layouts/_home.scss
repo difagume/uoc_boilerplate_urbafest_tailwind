@@ -1,0 +1,79 @@
+/* urls */
+$url-bckgrnd-w: url("../images/portada-w.jpg");
+$url-bckgrnd-m: url("../images/portada-m.jpg");
+$url-bckgrnd: url("../images/portada.jpg");
+
+/**
+ * Estilos aplicados a clases
+ */
+.poster {
+  position: relative;
+  height: 94vh;
+  padding: 12% 23%;
+  background-attachment: fixed;
+  background-image: $url-bckgrnd-w;
+  background-size: cover;
+}
+
+.xx-small { font-size: xx-small; }
+
+.social-buttons {
+  justify-content: center;
+  grid-template-columns: repeat(3, auto);
+}
+
+/**
+* Estilos tailwind
+*/
+@layer components {
+  .img-rounded-10 {
+    @apply w-10 h-10 rounded-full;
+  }
+
+  .a-decoration {
+    @apply no-underline uppercase text-primary-500;
+  }
+
+  .countdown-number {
+    @apply text-secondary text-4xl md:text-6xl my-4;
+  }
+
+  .card {
+    @apply relative p-5 m-2 md:m-4 h-52 w-48 border border-gray-200 shadow-lg;
+  }
+
+  .card-title {
+    @apply flex flex-row uppercase font-bold pb-4 text-lg;
+  }
+
+  .card-body {
+    @apply flex flex-col text-left;
+  }
+
+  .card-body-p {
+    @apply text-sm mb-2;
+  }
+
+  .card-footer {
+    @apply absolute bottom-2 right-2;
+  }
+}
+
+/**
+ * Reglas para dispositivos
+ */
+@media (max-width: 75rem) {
+  .poster { background-image: $url-bckgrnd-m; }
+}
+
+@media (max-width: 37rem) {
+  .poster {
+    height: 92vh;
+    padding: 65% 8%;
+    background-image: $url-bckgrnd;
+  }
+
+  .social-buttons {
+    justify-content: space-evenly;
+  }
+}
